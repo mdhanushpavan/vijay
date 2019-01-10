@@ -21,7 +21,7 @@ pipeline
         {
             steps
             {
-                sh 'scp /var/lib/jenkins/workspace/pipe/target/CounterWebApp.war root@13.233.104.227:/root/tomcat/webapps/raju.war'
+                sh 'scp -o StrictHostKeyChecking=no /var/lib/jenkins/workspace/pipe/target/CounterWebApp.war root@13.233.104.227:/root/tomcat/webapps/raju.war'
             }
         }
     }
